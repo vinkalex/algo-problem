@@ -48,7 +48,7 @@ public:
 
     pair<int, vector<int>> BFS(int vertex_start, int start_time, int finish) {
         set<pair<int, int>> q;
-        for (auto v: Data) {
+        for (auto &v: Data) {
             v.Depth = INF;
         }
         Data[vertex_start].Depth = start_time;
